@@ -5,54 +5,69 @@ import javax.swing.JOptionPane;
 public class Exercicios2 {
 
 	public static void main(String[] args) {
-
-		//JOptionPane.showMessageDialog(null,"Exercicio 1 \n \n "+"O Maior numero é :"+Codigos2.maiorNumero());
 		
-		//JOptionPane.showMessageDialog(null,"Exercicio 2 \n \n "+"O Maior numero é :"+Codigos2.positivoNegativo());
+		try {
 		
-		//JOptionPane.showMessageDialog(null,"Exercicio 3 \n \n "+"O Maior numero é :"+Codigos2.mf());
+		String x = JOptionPane.showInputDialog("Qual Exercicio sera realizado ?");
+		int r = (Integer.valueOf(x));
 		
-		//Codigos2.vc();
+		switch (r) {
+		case 1:JOptionPane.showMessageDialog(null,"Exercicio 1 \n \n "+"O Maior numero é :"+Codigos2.maiorNumero()); break;
 		
-		//JOptionPane.showMessageDialog(null, Codigos2.media());
+		case 2:JOptionPane.showMessageDialog(null,"Exercicio 2 \n \n "+"O Maior numero é :"+Codigos2.positivoNegativo()); break;
 		
-		//JOptionPane.showMessageDialog(null,"Exercicio 6 \n \n "+"O Maior numero é :"+Codigos2.maior());
+		case 3:JOptionPane.showMessageDialog(null,"Exercicio 3 \n \n "+"O Maior numero é :"+Codigos2.mf()); break;
 		
-		//JOptionPane.showMessageDialog(null,"Exercicio 7 \n \n "+"O Maior numero é :"+Codigos2.maior()+"\n \n"+
-		//"O Menor numero é :"+Codigos2.menor());
+		case 4:Codigos2.vc(); break;
 		
+		case 5:JOptionPane.showMessageDialog(null, Codigos2.media()); break;
 		
-		//JOptionPane.showMessageDialog(null,"Exercicio 8 \n \n "+Codigos2.comprar());
+		case 6:JOptionPane.showMessageDialog(null,"Exercicio 6 \n \n "+"O Maior numero é :"+Codigos2.maior()); break;
 		
-		//JOptionPane.showMessageDialog(null,"Exercicio 9 \n \n "+Codigos2.dec());
-		
-		//Codigos2.turno();
-		
-		//Codigos2.aumentoS();
-		
-		//Codigos2.folhaPagamento();
-		
-		//Codigos2.diaSemana();
-		
-		//Codigos2.mediaNota();
-		
-		//Codigos2.triangulo();
-		
-		Codigos2.eq();
-		
-		//Codigos2.ano();
-		
-		//Codigos2.parImpar();
-		
-		//Codigos2.posNeg();
-		
-		//Codigos2.combustivel();
-		
-		//Codigos2.fruta();
-		
-		//Codigos2.hipermecado();
+		case 7:JOptionPane.showMessageDialog(null,"Exercicio 7 \n \n "+"O Maior numero é :"+Codigos2.maior()+"\n \n"+
+		"O Menor numero é :"+Codigos2.menor()); break;
 		
 		
+		case 8:JOptionPane.showMessageDialog(null,"Exercicio 8 \n \n "+Codigos2.comprar()); break;
+		
+		case 9:JOptionPane.showMessageDialog(null,"Exercicio 9 \n \n "+Codigos2.dec()); break;
+		
+		case 10:Codigos2.turno(); break;
+		
+		case 11:Codigos2.aumentoS(); break;
+		
+		case 12:Codigos2.folhaPagamento(); break;
+		
+		case 13:Codigos2.diaSemana(); break;
+		
+		case 14:Codigos2.mediaNota(); break;
+		
+		case 15:Codigos2.triangulo(); break;
+		
+		case 16:Codigos2.eq(); break;
+		
+		case 17:Codigos2.ano(); break;
+		
+		case 18:Codigos2.parImpar(); break;
+		
+		case 19:Codigos2.posNeg(); break;
+		
+		case 20:Codigos2.interr(); break;
+		
+		case 21:Codigos2.combustivel(); break;
+		
+		case 22:Codigos2.fruta(); break;
+		
+		case 23:Codigos2.hipermecado(); break;
+		
+		default: JOptionPane.showMessageDialog(null, "Informação invalida");
+			break;
+		}
+		
+	}catch (Exception e) {
+		e.printStackTrace();
+		JOptionPane.showMessageDialog(null, "Erro ao processar o arquivo");
 	}
-
+	}
 }
+
